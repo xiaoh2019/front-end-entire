@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>bs</title>
+    <script src="./js/jquery.js"></script>
+    <script src="./bs/js/bootstrap.js"></script>
+    <link type="text/css" rel="stylesheet" href="./bs/css/bootstrap.css"></link>
+    <script>
+        $(document).ready(function () {
+            $("#b11").click(function () {
+                alert("aaa")
+                $("#b11").remove()
+            })
+        })
+
+    </script>
+</head>
+<body>
+
+ <div class="container">
+     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+         <!-- Indicators -->
+         <ol class="carousel-indicators">
+             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+         </ol>
+
+         <!-- Wrapper for slides -->
+         <div class="carousel-inner" role="listbox">
+             <div class="item active">
+                 <img src="..." alt="...">
+                 <div class="carousel-caption">
+                     ...
+                 </div>
+             </div>
+             <div class="item">
+                 <img src="..." alt="...">
+                 <div class="carousel-caption">
+                     ...
+                 </div>
+             </div>
+             ...
+         </div>
+
+         <!-- Controls -->
+         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+             <span class="sr-only">Previous</span>
+         </a>
+         <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+             <span class="sr-only">Next</span>
+         </a>
+     </div>
+     <button type="button" id="b11" class="close" data-dismiss="alert" aria-label="Close">
+         <span aria-hidden="true">啊啊啊&times;</span>
+     </button>
+     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+         Launch demo modal
+     </button>
+     <div class="modal fade"id="myModal" tabindex="-1" role="dialog">
+         <div class="modal-dialog" role="document">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                     <h4 class="modal-title">提示框</h4>
+                 </div>
+                 <div class="modal-body">
+                     <p>确定要操作吗&hellip;</p>
+                 </div>
+                 <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                     <button type="button" class="btn btn-primary">Save changes</button>
+                 </div>
+             </div><!-- /.modal-content -->
+         </div><!-- /.modal-dialog -->
+     </div>
+     <div class="progress">
+         <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+             <span class="sr-only">60% Complete</span>
+         </div>
+     </div>
+     <div class="alert alert-warning alert-dismissible" role="alert">
+         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+         <strong>Warning!</strong> Better check yourself, you're not looking too good.
+     </div>
+     <div class="alert alert-success" role="alert">AAA</div>
+     <div class="alert alert-info" role="alert">BBB</div>
+     <div class="alert alert-warning" role="alert">warning</div>
+     <div class="alert alert-danger" role="alert">danger</div>
+     <nav aria-label="...">
+         <ul class="pagination">
+             <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+             <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+             <li ><a href="#">2 <span class="sr-only">(current)</span></a></li>
+             <li ><a href="#">3 <span class="sr-only">(current)</span></a></li>
+
+         </ul>
+     </nav>
+     <ol class="breadcrumb">
+         <li><a href="#">Home</a></li>
+         <li class="active"><a href="#">Library</a></li>
+         <li >Data</li>
+     </ol>
+     <div class="btn-group">
+         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Action <span class="caret"></span>
+         </button>
+         <ul class="dropdown-menu">
+             <li><a href="#">Action</a></li>
+             <li><a href="#">Another action</a></li>
+             <li><a href="#">Something else here</a></li>
+             <li role="separator" class="divider"></li>
+             <li><a href="#">Separated link</a></li>
+         </ul>
+     </div>
+     <div class="btn-group">
+         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Action <span class="caret"></span>
+         </button>
+         <ul class="dropdown-menu">
+             <li><a href="#">Action</a></li>
+             <li><a href="#">Another action</a></li>
+             <li><a href="#">Something else here</a></li>
+             <li role="separator" class="divider"></li>
+             <li><a href="#">Separated link</a></li>
+         </ul>
+     </div>
+     <div class="btn-toolbar" role="toolbar" >
+         <div class="btn-group" role="group" >1</div>
+         <div class="btn-group" role="group">2</div>
+         <div class="btn-group" role="group" >3</div>
+     </div>
+     <div class="dropdown">
+         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+             Dropdown
+             <span class="caret"></span>
+         </button>
+         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+             <li><a href="#">Action</a></li>
+             <li><a href="#">Another action</a></li>
+             <li><a href="#">Something else here</a></li>
+             <li role="separator" class="divider"></li>
+             <li><a href="#">Separated link</a></li>
+         </ul>
+     </div>
+     <div class="dropup">
+         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Dropup
+             <span class="caret"></span>
+         </button>
+         <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+             <li><a href="#">Action</a></li>
+             <li><a href="#">Another action</a></li>
+             <li><a href="#">Something else here</a></li>
+             <li role="separator" class="divider"></li>
+             <li><a href="#">Separated link</a></li>
+         </ul>
+     </div>
+     <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+     <form class="form-horizontal">
+         <div class="form-group form-group-lg">
+             <label class="col-sm-2 control-label" for="formGroupInputLarge">Large label</label>
+             <div class="col-sm-2">
+                 <input class="form-control" type="text" id="formGroupInputLarge" placeholder="Large input">
+             </div>
+         </div>
+         <div class="form-group form-group-sm">
+             <label class="col-sm-2 control-label" for="formGroupInputSmall">Small label</label>
+             <div class="col-sm-2">
+                 <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Small input">
+             </div>
+         </div>
+     </form>
+     <table class="table">
+         <tr>
+             <td>name</td>
+             <td>age</td>
+             <td>email</td>
+         </tr>
+         <tr>
+             <td>王二</td>
+             <td>18</td>
+             <td>22@qq.com</td>
+         </tr>
+         <tr>
+             <td>王二</td>
+             <td>18</td>
+             <td>22@qq.com</td>
+         </tr>
+         <tr>
+             <td>王二</td>
+             <td>18</td>
+             <td>22@qq.com</td>
+         </tr>
+     </table>
+
+     <table class="table table-striped">
+         <tr>
+             <td>name</td>
+             <td>age</td>
+             <td>email</td>
+         </tr>
+         <tr>
+             <td>王二</td>
+             <td>18</td>
+             <td>22@qq.com</td>
+         </tr>
+         <tr>
+             <td>王二</td>
+             <td>18</td>
+             <td>22@qq.com</td>
+         </tr>
+         <tr>
+             <td>王二</td>
+             <td>18</td>
+             <td>22@qq.com</td>
+         </tr>
+     </table>
+     <table class="table table-hover">
+         <tr>
+             <td>name</td>
+             <td>age</td>
+             <td>email</td>
+         </tr>
+         <tr>
+             <td>王二</td>
+             <td>18</td>
+             <td>22@qq.com</td>
+         </tr>
+         <tr>
+             <td>王二</td>
+             <td>18</td>
+             <td>22@qq.com</td>
+         </tr>
+         <tr>
+             <td>王二</td>
+             <td>18</td>
+             <td>22@qq.com</td>
+         </tr>
+     </table>
+     <table class="table table-condensed">
+         <tr>
+             <td>name</td>
+             <td>age</td>
+             <td>email</td>
+         </tr>
+         <tr>
+             <td>王二</td>
+             <td>18</td>
+             <td>22@qq.com</td>
+         </tr>
+         <tr>
+             <td>王二</td>
+             <td>18</td>
+             <td>22@qq.com</td>
+         </tr>
+         <tr>
+             <td>王二</td>
+             <td>18</td>
+             <td>22@qq.com</td>
+         </tr>
+     </table>
+
+     <form>
+         <div class="form-group">
+             <label for="exampleInputEmail1">Email address</label>
+             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+         </div>
+         <div class="form-group">
+             <label for="exampleInputPassword1">Password</label>
+             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+         </div>
+         <div class="form-group">
+             <label for="exampleInputFile">File input</label>
+             <input type="file" id="exampleInputFile">
+             <p class="help-block">Example block-level help text here.</p>
+         </div>
+         <div class="checkbox">
+             <label>
+                 <input type="checkbox"> Check me out
+             </label>
+         </div>
+         <button type="submit" class="btn btn-default">Submit</button>
+     </form>
+     <select class="form-control">
+         <option>1</option>
+         <option>2</option>
+         <option>3</option>
+         <option>4</option>
+         <option>5</option>
+     </select>
+
+     <input class="form-control input-lg col-sm-2" type="text" placeholder=".input-lg">
+     <input class="form-control" type="text" placeholder="Default input">
+     <input class="form-control input-sm" type="text" placeholder=".input-sm">
+     <div class="btn-toolbar" role="toolbar" aria-label="...">
+         <div class="btn-group" role="group" aria-label="...">...</div>
+         <div class="btn-group" role="group" aria-label="...">...</div>
+         <div class="btn-group" role="group" aria-label="...">...</div>
+     </div>
+ </div>
+</body>
+</html>

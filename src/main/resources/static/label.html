@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html lable</title>
+</head>
+<body>
+    <hr>
+
+    <hr>
+         <h3>nav标签</h3>
+         <nav>
+             <a href="#">百度</a>
+             <a href="#">新浪</a>
+             <a href="#">搜狐</a>
+         </nav>
+    <hr>
+        <h3>表单</h3>
+        <form action="http://127.0.0.1:8899/addUser" method="post">
+            name:<input type="text" name="name">
+            age:<input type="text" name="age">
+            <input type="submit" value="submit">
+        </form>
+        <form>
+            textarea文本域<textarea cols="150" rows="10" name="text1" maxlength="20" placeholder="请留言" ></textarea><br>
+            button<button type="button">提交</button><br>
+            下拉框<br>
+            <select>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </select><br>
+            label标签<label>AAA</label>
+            input单选框name要一致 <input type="radio" name="name1" value="男"><input type="radio" name="name1" value="女"><br>
+            from 标签里面的fieldset标签
+            <from>
+                <fieldset>
+                    <legend>表头</legend>
+                    体重：<input type="text">
+                    身高：<input type="text">
+                </fieldset>
+            </from>
+        </form>
+        input 元素，datalist 中描述了其可能的值<br>
+        <input type="text" list="cars">
+        <datalist id="cars">
+            <option>BMW</option>
+            <option>BEN</option>
+            <option>KKK</option>
+        </datalist>
+    <hr>
+        <h3>mark标签</h3>
+        <mark>abc</mark>
+        <h3>meter标签</h3>
+        <meter value="0.6">60%</meter>
+        <h3>progress标签</h3>
+        <progress value="22" max="100"></progress>
+    <hr>
+        <h3>del标签删除 ins标签插入文本</h3>
+        abc <del>20</del> <ins>12</ins> pieces
+
+    <hr>
+        <h2>audio标签</h2>
+        <audio controls = "autoplay">
+            <source src="img/2.mp3" type="audio/mp3" />
+        </audio>
+    <hr>
+        <h2>area标签</h2>
+        <img src="">
+    <h2> html全局属性 </h2>
+        <p>accesskey指定访问元素快捷键 class contenteditable contextmenu data-* dir draggable dropzone hidden id lang spellcheck style tabindex title translate</p>
+
+        <p contenteditable="true">contenteditable 这是一个可编辑段落。</p>
+
+        <div contextmenu="mymenu">
+            <p>contextmenu鼠标右键点击这个段落 会显示Refresh Twitter </p>
+            <menu type="context" id="mymenu">
+                <menuitem label="Refresh"></menuitem>
+                <menuitem label="Twitter"></menuitem>
+            </menu>
+
+        </div>
+        <p dir="rtl">dir属性改变文字方向</p>
+        <p draggable="true"> draggable这是一段可移动的段落</p>
+        <p drop></p>
+        <a href="#"> a标签</a>
+    <hr>
+</body>
+</html>

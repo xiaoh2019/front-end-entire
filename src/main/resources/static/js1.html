@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js1</title>
+    <script>
+        //
+        var myVar = setInterval(myTimer1, 1000);
+
+        function myTimer1() {
+            var d = new Date();
+            var t = d.toLocaleTimeString();
+            document.getElementById("p10").innerHTML = t;
+        }
+        //如果直接写在script标签里，加载页面的时候回直接运行
+        var p1 = document.getElementById("p1")
+        p1.innerText = "hello"
+        alert(p1)
+
+        function f1() {
+            var p1 = document.getElementById("p1")
+            p1.innerText = "hello"
+            alert(p1)
+        }
+        function f2() {
+            var p1 = document.getElementById("h3")
+            p1.innerText = "hello"
+            alert(p1)
+        }
+        function f3() {
+            var p1 = document.getElementById("p2")
+            alert(p1.innerText)
+            alert(p1.innerHTML)
+
+        }
+        function f4() {
+            var p1 = document.getElementById("p3")
+            //只会拿到所有标签的内容，不会拿到标签
+            //alert(p1.innerText)
+            //innerHTML会把标签页拿到
+            alert(p1.innerHTML)
+        }
+
+        function f5() {
+            var p1 = document.getElementById("p4")
+            p1.src = "eg_venus.gif"
+        }
+
+        function f6() {
+            var p3 = document.getElementById(p3)
+            var p =  document.createElement("p")
+            p.innerHTML = "abc"
+            p3.appendChild(p)
+        }
+        function f7() {
+
+        }
+        function f8() {
+            document.write("<a href='www.baid.com'>百度</a>")
+        }
+        function f9() {
+            alert(document.baseURI)
+        }
+        function f10() {
+            window.open("http://www.baidu.com")
+            window.close()
+        }
+
+
+    </script>
+</head>
+<body id="p3">
+    <p id="p1" onclick="f1()">这是一个段落</p>
+    <h3 onclick="f2()" id="h3">hello</h3>
+    <p id="p2" onclick="f3()">点击显示这段内容</p>
+    <p  onclick="f4()">点击显示body内容</p>
+    <<!--p id="p4" onclick="f4()" >点击改变这个标签的属性</p>-->
+    <img src="img/eg_sun.gif" id="p4" onclick="f5()">
+    <button id="b1" onclick="f6()">添加元素</button>
+    <button id="b2" onclick="f7()">删除元素</button><br>
+    <button id="b3" onclick="f8()">document。write</button>
+    <button id="b4" onclick="f9()">document.baseURI</button>
+    <button id="b5" onclick="f10()">window。close</button>
+    <p id="p10">hello</p>
+
+</body>
+</html>
